@@ -23,6 +23,9 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { PromotionService } from './services/promotion.service';
 import { Promotion } from './shared/promotion';
 
+import { LeaderService } from './services/leader.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +50,8 @@ import { Promotion } from './shared/promotion';
   ],
   providers: [
     DishService,
-    PromotionService
+    PromotionService,
+    LeaderService
   ],
   bootstrap: [AppComponent]
 })
